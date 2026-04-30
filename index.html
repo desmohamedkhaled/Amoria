@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amoria</title>
+  <meta name="description" content="Amoria is a luxury stainless-steel accessories brand for rings, chains, and bracelets." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Amoria home">
+        <img src="logo.png" alt="Amoria Logo" class="brand-logo" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#featured">Featured</a>
+        <a href="#size-guide">Size Guide</a>
+        <a href="#faq">FAQ</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="nav-cta" href="#products">Shop Now</a>
+        <button class="cart-toggle" type="button" aria-expanded="false" aria-controls="cartDrawer">
+          Cart <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="mobile-menu-panel">
+        <button class="mobile-menu-close" type="button" aria-label="Close menu">×</button>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#featured">Featured</a>
+        <a href="#size-guide">Size Guide</a>
+        <a href="#faq">FAQ</a>
+        <a href="#gallery">Instagram</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
+
+      <div class="container hero-content reveal">
+        <p class="eyebrow">Luxury stainless-steel accessories</p>
+        <h1>Amoria</h1>
+        <p class="hero-copy">Timeless Stainless Steel Elegance</p>
+        <p class="hero-description">
+          Sculpted essentials, quiet restraint, and a refined steel finish designed to feel
+          elevated from first glance to final wear.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">Shop Now</a>
+          <a class="btn btn-secondary" href="https://instagram.com/amoria" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Brand highlights">
+          <div>
+            <strong>Stainless steel</strong>
+            <span>Luxury finish</span>
+          </div>
+          <div>
+            <strong>Gift ready</strong>
+            <span>Elegant packaging</span>
+          </div>
+          <div>
+            <strong>WhatsApp order</strong>
+            <span>Fast inquiries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Amoria</p>
+          <h2>Quiet luxury for the modern wardrobe.</h2>
+        </div>
+
+        <div class="about-card reveal">
+          <p>
+            Amoria creates stainless-steel rings, chains, and bracelets with a sharp,
+            elevated aesthetic. Each piece is designed to feel precise, polished, and
+            effortless whether worn alone or layered.
+          </p>
+          <p>
+            Inspired by the discipline of luxury fashion houses, the collection focuses on
+            clean form, calm balance, and a strong sense of presence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" id="featured">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Featured selection</p>
+          <h2>Two signature stories from the collection.</h2>
+        </div>
+
+        <div class="featured-layout">
+          <article class="feature-panel feature-panel-ring reveal">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80" alt="Amoria ring styling" />
+            <div class="feature-panel-copy">
+              <span class="feature-label">Best seller</span>
+              <h3>Signature Ring</h3>
+              <p>Architectural, compact, and polished to a mirror-like steel finish.</p>
+              <div class="feature-metrics">
+                <span>Polished steel</span>
+                <span>Everyday icon</span>
+              </div>
+              <button class="feature-link" type="button" data-order-product="Signature Ring">Order on WhatsApp</button>
+            </div>
+          </article>
+
+          <article class="feature-panel feature-panel-chain reveal">
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=80" alt="Amoria chain styling" />
+            <div class="feature-panel-copy">
+              <span class="feature-label">Editors' choice</span>
+              <h3>Layered Chain</h3>
+              <p>Longer links and a bolder drape for a more editorial, fashion-led finish.</p>
+              <div class="feature-metrics">
+                <span>Layered form</span>
+                <span>Statement piece</span>
+              </div>
+              <button class="feature-link" type="button" data-order-product="Layered Chain">Order on WhatsApp</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Products</p>
+          <h2>Modern essentials with a luxury finish.</h2>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section size-guide" id="size-guide">
+      <div class="container size-guide-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Size guide</p>
+          <h2>Choose your fit with confidence.</h2>
+        </div>
+
+        <div class="size-guide-card reveal">
+          <div>
+            <h3>Rings</h3>
+            <p>Measure the inner diameter of a ring you already wear or wrap a strip of paper around your finger.</p>
+          </div>
+          <div>
+            <h3>Chains</h3>
+            <p>Short: 45cm. Standard: 50cm. Layered: 55cm and above for a relaxed luxury drop.</p>
+          </div>
+          <div>
+            <h3>Bracelets</h3>
+            <p>Measure your wrist snugly, then add 1 to 2 cm for a comfortable premium fit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Quick answers before you order.</h2>
+        </div>
+
+        <div class="faq-grid reveal">
+          <details>
+            <summary>What is the material?</summary>
+            <p>Amoria uses stainless steel pieces designed for a polished, premium finish with everyday durability.</p>
+          </details>
+          <details>
+            <summary>Do you offer delivery?</summary>
+            <p>Yes. Delivery options can be confirmed quickly on WhatsApp once you share your city and order details.</p>
+          </details>
+          <details>
+            <summary>How do I care for the pieces?</summary>
+            <p>Keep them dry after wear, store them separately, and wipe with a soft cloth to preserve the shine.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Instagram</p>
+          <h2>Styled to feel like a curated feed.</h2>
+        </div>
+
+        <div class="instagram-grid reveal">
+          <article class="gallery-card gallery-ring">
+            <span>Amoria / Rings</span>
+            <strong>Clean lines. Mirror shine.</strong>
+          </article>
+          <article class="gallery-card gallery-chain">
+            <span>Amoria / Layers</span>
+            <strong>Stacked with restraint.</strong>
+          </article>
+          <article class="gallery-card gallery-bracelet">
+            <span>Amoria / Bracelets</span>
+            <strong>Polished everyday detail.</strong>
+          </article>
+          <article class="gallery-card gallery-atelier">
+            <span>Amoria / Craft</span>
+            <strong>Minimal, premium, refined.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Reviews</p>
+          <h2>Trusted by clients who value detail.</h2>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card reveal">
+            <p>"The finish feels much more premium than expected. It looks expensive and clean."</p>
+            <strong>Nour A.</strong>
+          </article>
+          <article class="review-card reveal">
+            <p>"The chain stacks perfectly with other pieces. Very elegant packaging too."</p>
+            <strong>Youssef M.</strong>
+          </article>
+          <article class="review-card reveal">
+            <p>"Smooth ordering on WhatsApp and the ring size guidance was helpful."</p>
+            <strong>Salma H.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="contact">
+      <div class="container cta-card reveal">
+        <p class="eyebrow">Ready to order?</p>
+        <h2>Get Your Luxury Look Now</h2>
+        <p>
+          Send your favorite piece on WhatsApp and we will help you place the order quickly.
+        </p>
+        <button class="btn btn-primary btn-wide" type="button" data-order-product="General inquiry">
+          Order on WhatsApp
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp" href="#" data-order-product="General inquiry" aria-label="Order on WhatsApp">
+    WhatsApp
+  </a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="https://instagram.com/amoria" target="_blank" rel="noreferrer">Instagram</a>
+      <p>&copy; 2026 Amoria. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="quickViewBackdrop" hidden>
+    <div class="quick-view-modal" role="dialog" aria-modal="true" aria-labelledby="quickViewTitle">
+      <button class="modal-close" type="button" aria-label="Close quick view">×</button>
+      <div class="quick-view-visual" id="quickViewVisual"></div>
+      <div class="quick-view-body">
+        <p class="eyebrow" id="quickViewTone"></p>
+        <h3 id="quickViewTitle"></h3>
+        <p id="quickViewDescription"></p>
+        <div class="quick-view-meta">
+          <span id="quickViewPrice"></span>
+          <span id="quickViewDetail"></span>
+        </div>
+        <div class="quick-view-actions">
+          <button class="btn btn-primary quick-view-order" type="button" id="quickViewOrder">Add to cart</button>
+          <button class="btn btn-secondary" type="button" data-order-product="General inquiry">Order now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" hidden>
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Cart</p>
+        <h3>Your selection</h3>
+      </div>
+      <button class="modal-close cart-close" type="button" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-options">
+      <label>
+        <span>Preferred contact</span>
+        <select id="cartContactPreference">
+          <option>WhatsApp</option>
+          <option>Phone call</option>
+          <option>Instagram DM</option>
+        </select>
+      </label>
+      <label>
+        <span>Quick note</span>
+        <textarea id="cartGlobalNote" rows="3" placeholder="Size, color, quantity, delivery note"></textarea>
+      </label>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">EGP 0</strong>
+      </div>
+      <button class="btn btn-primary btn-wide" type="button" id="cartCheckout">Checkout on WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="overlay-backdrop" id="overlayBackdrop" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
